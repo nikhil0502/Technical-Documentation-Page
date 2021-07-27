@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    
+    <nav id="navbar" class="topnav">
+        <header class="head"><a href="#">CSS Documentation</a></header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#CSS_Properties">CSS Properties</a>
+            <a class="nav-link" href="#CSS_Transistion">CSS Transistion</a>
+            <a class="nav-link" href="#CSS_Animation">CSS Animation</a>
+            <a class="nav-link" href="#CSS_Cheat_Sheet">CSS Cheat Sheet</a>
+            <a   href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+    </nav>
+   
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+        <header class="baby">Introduction</header>
+            <p>
+                <ul>
+                    <li>CSS stands for Cascading Style Sheets</li>
+                    <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                    <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                    <li>External stylesheets are stored in CSS files</li>
+            </ul>
+        </p>
+        
+        </section>
+        <section class="main-section" id="CSS_Properties">
+            <header class="baby">CSS Properties</header>
+            <p> 
+                Here are some basic CSS properties to work with.</p>    
+                <ul>
+                    <li> Text Properties</li>
+                    <li>List Properties</li>
+                    <li>Border Properties</li>
+                    <li>Font Properties</li>
+                </ul>
+               <table>
+                <tr class="bold">
+                   <th>Property</th>
+                   <th>Description</th>
+                   <th>Values</th>
+                </tr>
+                <tr>
+                    <th>list-style</th>
+                    <th>Sets all the properties for a list in one declaration</th>	
+                    <th>list-style-type, list-style-position, list-style-image, inherit</th>
+                </tr>
+                <tr>
+                    <th>list-style-image	</th>
+                    <th>Specifies an image as the list-item marker</th>
+                    <th>URL, none, inherit</th>
+                </tr>
+                <tr>
+                    <th>list-style-position</th>
+                    <th>Specifies where to place the list-item marker</th>
+                    <th>inside, outside, inherit</th>
+                </tr>
+                <tr>
+                    <th>list-style-type</th>
+                    <th>Specifies the type of list-item marker</th>
+                    <th>none, disc, circle, square, decimal, decimal-leading-zero,
+                        armenian, georgian, lower-alpha, upper-alpha, lower-greek,
+                        lower-latin, upper-latin, lower-roman, upper-roman, inherit</th>
+                </tr>
+            </table>
+            <p style="margin-top:10px;">
+            Click <a href="http://web.simmons.edu/~grabiner/comm244/weekthree/css-basic-properties.html" target="_blank">here</a> to know more Properties in CSS
+            </p>
+        </section>
+        <section class="main-section" id="CSS_Transistion">
+            <header class="baby">CSS Transistion</header>
+            <p>CSS transitions allows you to change property values smoothly, over a given duration. <br> </p>
+              <p>  <b>How to Use CSS Transitions?</b> <br>
+            To create a transition effect, you must specify two things:
+            <ul>
+            <li>The CSS property you want to add an effect to</li>
+                <li>the duration of the effect</li>
+            </ul>
+            <b>Note:</b> If the duration part is not specified, the transition will have no effect, because the default value is 0.
+              <br> </p>
+              <p> Hover/(click if you are on mobile view) on the giveb below &#128071; example to see the effect. <br>
+            Example:- <span class="trans">Click me for the effect</span>  
+            <code> HTML:	
+                &lt;button title="Click me To Know More Of About This Stuff"&gt;
+                &lt;a href="https://www.w3schools.com/css/css3_animations.asp"&gt;&lt;/a&gt;&amp;#9996
+                &lt;/button&gt;
+                </code>
+                <code class="code"> HTML:	
+                    &lt;button title="Click me To Know More Of About This Stuff"&gt;
+                    &lt;a href="https://www.w3schools.com/
+                    css/css3_animations.asp"&gt;&lt;/a&gt;&amp;#9996
+                    &lt;/button&gt;
+                    </code>
+                <code >
+                    CSS:
+                    button{
+                    border: none;
+                    background-color: green ;
+                    width: 10%;
+                    height:30%;
+                    padding: 10px 0px;
+                    animation: animate 2s infinite ;
+                }
+            </code>
+            <code class="code">
+                CSS:
+                button{
+                border: none;
+                background-color: green ;
+                width: 10%;
+                height:30%;
+                padding: 10px 0px;
+                animation: animate 2s infinite ;
+            }
+        </code>
+        <code style="display:none;"></code>
+            </p>
+        </section>
+        <section class="main-section" id="CSS_Animation">
+            <header class="baby">CSS Animation</header>
+            <p>CSS allows animation of HTML elements without using JavaScript or Flash! <br></p>    
+               <p><b> What are CSS Animations?</b> <br>
+               <ul>
+                <li>An animation lets an element gradually change from one style to another. <br></li>
+                <li>You can change as many CSS properties you want, as many times as you want. <br></li>
+                <li> To use CSS animation, you must first specify some keyframes for the animation. <br></li>
+                <li>Keyframes hold what styles the element will have at certain times.</li>
+            </ul></p>
+            <p>Given Below Button is an example for animation!!!
+            
+            <button title="Click me To Know More Of About This Stuff">
+                <a href="https://www.w3schools.com/css/css3_animations.asp"></a> &#9996;
+            </button>
+            <code> HTML:	
+                &lt;button title="Click me To Know More Of About This Stuff"&gt;
+                &lt;a href="https://www.w3schools.com/css/css3_animations.asp"&gt;&lt;/a&gt;&amp;#9996
+                &lt;/button&gt;
+                </code>
+                <code>
+                    CSS:
+                    button{
+                    border: none;
+                    background-color: green ;
+                    width: 10%;
+                    height:30%;
+                    padding: 10px 0px;
+                    animation: animate 2s infinite ;
+                }
+            </code>
+            <code class="code"> HTML:	
+                &lt;button title="Click me To Know More Of About This Stuff"&gt;
+                &lt;a href="https://www.w3schools.com/
+                css/css3_animations.asp"&gt;&lt;/a&gt;&amp;#9996
+                &lt;/button&gt;
+                </code>
+                <code class="code">
+                    CSS:
+                    button{
+                    border: none;
+                    background-color: green ;
+                    width: 10%;
+                    height:30%;
+                    padding: 10px 0px;
+                    animation: animate 2s infinite ;
+                }
+            </code>
+            </p>
+        </section>
+        <section class="main-section" id="CSS_Cheat_Sheet">
+            <header class="baby">CSS Cheat Sheet</header>
+            <p>
+                Click this <a href="https://htmlcheatsheet.com/css/">link</a> for CSS Cheat Sheet</p>
+            </p>
+        </section>
+        
+    </main>
+    <footer id="footer">
+        <ul>
+            <li><a href="#">Privarcy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <span>&#169;Copyright 2021, CSS Cheat Sheet</span>
+    </footer>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }</script>
+</body>
+</html>
